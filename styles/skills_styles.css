@@ -1,0 +1,28 @@
+header{
+    align-self: center;
+}
+.navmenu{
+    border-radius: 10px;
+    width: 1150px;    
+    margin: 25px;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(42, 24, 39);;
+    opacity: 87%;
+    align-items: center;
+    justify-content: end;
+}
+.options{
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: beige;
+    margin: 6px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.options:hover{
+   color: rgb(197, 188, 198);;
+}
