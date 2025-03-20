@@ -110,12 +110,21 @@ header{
 }
 
 /*soft skills*/
+
+.cont-intermed{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cont-ss{
     width: 500px;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 0;
 }
 .sskill{
     background-color: rgb(89, 59, 93);
@@ -128,4 +137,15 @@ header{
     font-size: 20px;
     padding: 5px;
     margin: 10px;
+    transition-duration: 0.3s;
+}
+.sskill:hover{
+    background-color: beige;
+    color: rgb(89, 59, 93);
+    
+}
+.cont-intermed h2{
+    color: beige;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
 }
