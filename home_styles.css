@@ -28,13 +28,14 @@ header{
     text-shadow: 5px;
     margin: 0px;
     display: flex;
+    justify-content: center;
 }
 h1.principaltxt{
-    font-size: 55px;
+    font-size: 75px;
     text-align: left;
 }
 h2.principaltxt{
-    font-size: 28px;
+    font-size: 48px;
     text-align: left;
 }
 
@@ -53,7 +54,7 @@ h2.principaltxt{
     text-shadow: 5px;
     padding: 15px;
     margin: 10px;
-    top: 25px;
+    top: 35px;
     border-color: beige;
     border-style:solid;
     display: flex;
@@ -65,16 +66,16 @@ h2.principaltxt{
     text-decoration: none;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
+    font-size: 25px;
     color: beige;
     margin: 6px;
+    padding: 5px;
 }
 .options:hover{
     cursor: pointer;
     background-color: beige;
     opacity: 50%;
     color: rgb(0, 0, 0);
-    /*transición está en duda*/
     transform: scale(115%); 
     transition-duration: 0.1s; 
     text-align: center;
@@ -104,7 +105,7 @@ h2.principaltxt{
     border: none;
     cursor: pointer;
     padding: 0;
-    scale: 170%;
+    scale: 200%;
     margin: 5px;
 }
 #music-toggle:hover{
