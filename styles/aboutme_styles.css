@@ -48,6 +48,40 @@ header{
    color: rgb(197, 188, 198);;
 }
 
+/*DESCRIPCIÓN E IMAGEN*/
+.descp-cont{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 2, 11);
+    opacity: 90%;
+    width: 1070px;
+    align-self: center;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    margin: 0%;
+    max-width: 500px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.description h1{
+    font-size: 40px;
+    color: beige;
+}
+.description p{
+    font-size: 20px;
+    color: rgb(197, 188, 198);
+}
+.me{
+    width: 400px;
+    height: auto;
+}
+
+
 /*CONTENEDORES CON INFO*/
 
 .container{
@@ -118,108 +152,3 @@ header{
 .card p{
     color: rgb(197, 188, 198);
 }
-
-/*RANDOMIZADOR DE DATOS*/
-.randomdata{
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    background-color: rgb(42, 24, 39);
-    opacity: 90%;
-    width: 700px;
-    height: 300px;
-    border-radius: 10px;
-}
-.randomdata h3{
-    color: beige;
-    margin-top: 20px;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 25px;
-}
-.box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.crap{
-    background-color: rgb(103, 92, 101);
-    width: 70px;
-    height: 70px; 
-    margin-left: 20px;
-    margin-right: 20px; 
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#crap{
-    max-width: 50px;
-    max-height: 50px;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.3s ease-out;
-}
-#crap:hover {
-    animation: shake 0.5s infinite linear;
-}
-
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-2px); }
-    50% { transform: translateX(2px); }
-    75% { transform: translateX(-2px); }
-    100% { transform: translateX(2px); }
-}
-
-.text-box{
-    background-color: rgb(103, 92, 101);
-    width: 500px;
-    height: 150px;  
-    margin-right: 20px; 
-    margin-left: 20px; 
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#randomFact{
-    color: RGB(12, 2, 11);
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 22px;
-    padding: 10px;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
-
-/*PARTE DEL CV*/
-
-.downloadcv{
-    align-self: center;
-    background-color: rgb(12, 2, 11);
-    opacity: 90%;
-    font-size: large;
-    color: beige;
-    padding: 25px;
-    text-align: center;
-    border-radius: 10px;
-    font-family: "Pixelify Sans", sans-serif;
-    max-width: 900px;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-
