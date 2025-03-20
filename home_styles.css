@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+}
+header{
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+    margin: 15px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principaltxt{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: beige;
+    letter-spacing: 5px;
+    text-shadow: 5px;
+    margin: 0px;
+    display: flex;
+}
+h1.principaltxt{
+    font-size: 55px;
+    text-align: left;
+}
+h2.principaltxt{
+    font-size: 28px;
+    text-align: left;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.menu{
+    position: relative;
+    z-index: 2;
+    letter-spacing: 5px;
+    text-shadow: 5px;
+    padding: 15px;
+    margin: 10px;
+    top: 25px;
+    border-color: beige;
+    border-style:solid;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+.options{
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: beige;
+    margin: 6px;
+}
+.options:hover{
+    cursor: pointer;
+    background-color: beige;
+    opacity: 50%;
+    color: rgb(0, 0, 0);
+    /*transición está en duda*/
+    transform: scale(115%); 
+    transition-duration: 0.1s; 
+    text-align: center;
+
+}
+
+.fondo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.config{
+    z-index: 2; 
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+#music-toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    scale: 170%;
+    margin: 5px;
+}
+#music-toggle:hover{
+    opacity:80%;
+}

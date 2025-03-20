@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maria Agustina's portfolio</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="aboutme_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <span class="navmenu">
+                <audio id="select-sound">
+                    <source src="sounds/button_press.mp3">
+                </audio>
+                <a class="options" href="main.html">Home</a>
+                <a class="options" href="">My path</a>
+                <a class="options" href="">My work</a>
+                <a class="options" href="">Contact me</a>
+            </span>
+            
+        </header>
+
+        <div>
+            <img src="img/aboutme_wallpaper.gif" type="gif" class="fondo"></img>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <h3>From Argentina to the world</h3>
+                <p>Born and raised in Argentina, where the mate is strong, and the weather is unpredictable.</p>
+            </div>
+            <div class="card">
+                <h3>My nickname is</h3>
+                <h1 class="wave">
+                    <span>M</span><span>A</span><span>G</span><span>U</span>
+                </h1>
+                <p>A fusion of María and Agustina, "Magu" is a name that stuck. Short, simple, and very much me.</p>
+            </div>
+            <div class="card">
+                <h3>I do a lot of things.</h3>
+                <p>If there's a tutorial on YouTube, I can probably do it. Thanks to tutorials, I learned how to knit, paint, make jewellery, or even electrical work.</p>
+            </div>
+            <div class="card">
+                <h3>My curse</h3>
+                <p>In a cruel twist of fate, I'm a cat person who is allergic to cats. Actually, I'm allergic to A LOT of things.</p>
+                <img src="img/cat2.gif">
+            </div>
+            <div class="card">
+                <h3>I have two siblings, and I love them a lot.</h3>
+                <p>Being the eldest is a wild ride, but I wouldn't trade my siblings for anything. They feel like mine (but thanks God they're not).</p>
+            </div>
+            <div class="card">
+                <h3>I love playing videogames.</h3>
+                <img src="img/videogames.gif">
+                <p>Give me a good simulation or management game, and I'll disappear for HOURS. My favourite one is</p>
+                <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley</a>
+            </div>
+            <div class="card">
+                <h3>I'm learning Italian.</h3>
+                <p>Parlo un po' di italiano! Mi piace imparare nuove lingue.</p>
+            </div>
+        </div>
+
+        <div class="randomdata">
+            <h3>Roll the dice, know my mysteries!</h3>
+            <span class="box">
+                <span class="crap">
+                    <img src="img/crap.png" alt="crap" id="crap">
+                </span>
+                <span class="text-box">
+                    <p id="randomFact">Loading a mystery...</p>
+                </span>
+            </span>
+        </div>
+
+        <div class="downloadcv">
+            <p>If you want to know more about my technical skills and what tools I master, read my CV</p>
+            <a href="https://drive.google.com/file/d/1YoX55roHCsJII4Ookk2_gGb_eZUYFVDn/view?usp=sharing" target="_blank">HERE</a>
+        </div>
+        
+        <!--MÚSICA DE SELECIÓN-->
+        <script>
+                document.addEventListener("DOMContentLoaded", function () {
+            var audioClick = document.getElementById("select-sound");
+            var menuOptions = document.querySelectorAll(".options");
+
+            menuOptions.forEach(function(option) {
+                option.addEventListener("click", function (event) {
+                    event.preventDefault(); 
+                    audioClick.currentTime = 0;
+                    audioClick.play().catch(error => console.log(error));
+                    setTimeout(() => {
+                        window.location.href = option.href;
+                    }, 300); 
+                });
+            });
+            audioClick.volume = 0.4;
+        });
+
+        //RANDOMIZADOR
+            const facts = [
+                "My favourite animal is the horse.",
+                "My favourite color is pink, specifically RGB(247,202,202).",
+                "I've been playing the piano since I was eight.",
+                "I love experimenting with recipes, and everything always turns out delicious.",
+                "I'm a bit of a cleaning and organizing freak.",
+                "I enjoy logic challenges and solving complex puzzles.",
+                "I like to think of special dates and trips as extra episodes in the series of my life.",
+                "I'm a Leo, if you believe in astrology.",
+                "I'm a huge fan of cold drinks: iced tea, iced coffee, cold chocolate-milk, etc.",
+                "I'm fascinated by everything related to outer space. My second career choice was astrophysics.",
+                "I'm a film buff, I love discussing films with others, analyzing plots, and finding deeper meanings in the elements of the story.",
+                "I adore 80s music and aesthetics.",
+                "I'm not very athletic. I'm asthmatic and dislike most sports. The only ones I enjoy are yoga and pilates.",
+                "I run a small crocheting business, but I've neglected it because of college and work.",
+                "The worst decision I've ever made was installing League of Legends.",
+                "My favourite artists are Adele and Chappell Roan.",
+                "I like dancing bachata and salsa."
+            ];
+
+            const crapElement = document.getElementById('crap');
+            const randomFactElement = document.getElementById('randomFact');
+            function showRandomFact() {
+                const randomIndex = Math.floor(Math.random() * facts.length);
+                randomFactElement.textContent = facts[randomIndex];
+            }
+
+            crapElement.addEventListener('click', showRandomFact);
+
+        </script>
+
+    </body>
+</html>
+
