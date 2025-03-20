@@ -11,11 +11,11 @@
     <body>
 
         <header>
+            <audio id="select-sound">
+                <source src="sounds/button_press.mp3">
+            </audio>
             <nav class="navmenu">
-                <audio id="select-sound">
-                    <source src="sounds/button_press.mp3">
-                </audio>
-                <a class="options" href="main.html">Home</a>
+                <a class="options" href="index.html">Home</a>
                 <a class="options" href="">My skills</a>
                 <a class="options" href="">Projects</a>
                 <a class="options" href="">Contact me</a>
@@ -76,8 +76,8 @@
             </span>
         </div>
         
-        <!--MÚSICA DE SELECIÓN-->
         <script>
+            //Para el audio de los botones
                 document.addEventListener("DOMContentLoaded", function () {
             var audioClick = document.getElementById("select-sound");
             var menuOptions = document.querySelectorAll(".options");
@@ -95,7 +95,7 @@
             audioClick.volume = 0.4;
         });
 
-        //RANDOMIZADOR
+        //Randomizador de datos
             const facts = [
                 "My favourite animal is the horse.",
                 "My favourite color is pink, specifically RGB(247,202,202).",

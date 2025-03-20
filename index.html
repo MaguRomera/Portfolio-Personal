@@ -40,9 +40,9 @@
         </nav>
     </div>
 
-
-    <!--Para que funcione el botoncito de música-->
+    
     <script>
+        //Botón de música 
         document.getElementById("music-toggle").addEventListener("click", function () {
         var audio = document.getElementById("background-music");
         var icon = document.getElementById("music-icon");
@@ -59,7 +59,8 @@
         var music = document.getElementById("background-music");
         music.volume = 0.2;
     });
-    //PARA EL AUDIO DE LA SELECCIÓN
+
+    //Para el audio de los botones
     document.addEventListener("DOMContentLoaded", function () {
         var audioClick = document.getElementById("select-sound");
         var menuOptions = document.querySelectorAll(".options");
