@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(12, 2, 11);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -144,13 +144,13 @@ header{
 }
 
 
-.card a, .downloadcv a{
+.card a{
     color: pink;
     font-weight: 200;
     text-decoration: none;
 }
 
-.card h3, .card p, .card h1, .card a, .downloadcv h3, .downloadcv p, .downloadcv h1, .downloadcv a{
+.card h3, .card p, .card h1, .card a{
     margin: 4px; /* Elimina márgenes de ambos */
 }
 

@@ -50,3 +50,134 @@ header{
 .options:hover{
    color: rgb(197, 188, 198);;
 }
+
+/*project div*/
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.project{
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(12, 2, 11);
+    opacity: 90%;
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.project h2{
+    color: beige;
+    font-size: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.project p{
+    color:rgb(197, 188, 198);
+    font-size: 18px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.project img{
+    width: 180px;
+    height: auto;
+}
+
+.project:hover{
+    transform: scale(1.2);
+}
+
+body h1{
+    align-self: center;
+    justify-self: center;
+    width: 1100px;
+    border-radius: 10px;
+    color: beige;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.project{
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(12, 2, 11);
+    opacity: 90%;
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+/*Experience div*/
+.exp h2{
+    color: beige;
+    font-size: 25px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.exp p{
+    color:rgb(197, 188, 198);
+    font-size: 18px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0%;
+    text-align: center;
+    margin-top: 5px;
+}
+.exp h3{
+    color:rgb(89, 59, 93);
+    font-size: 18px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 0%;
+    text-align: center;
+    margin-top: 5px;
+}
+.experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.exp{
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(12, 2, 11);
+    opacity: 90%;
+    height: 320px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
