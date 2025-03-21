@@ -50,3 +50,56 @@ header{
 .options:hover{
    color: rgb(197, 188, 198);
 }
+
+/*social media buttons*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 2, 11);
+    border-radius: 10px;
+    width: 550px;
+    height: fit-content;
+    padding-left: 0px;
+    opacity: 90%;
+    padding-left: 0px;
+}
+
+.container h1{
+    text-decoration: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: beige;
+    font-size: 35px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.socialmedia-cnt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    padding-left: 0px;
+}
+.socialmedia{
+    transition: 0.3s ease-in-out;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.socialmedia img{
+    width: 110px;
+    height: auto;
+    padding: 0px;
+}
+
+.socialmedia:hover{
+    filter: brightness(70%);
+}
