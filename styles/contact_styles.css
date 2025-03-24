@@ -120,50 +120,29 @@ body h1{
     background-color: rgb(42, 24, 39);
     font-family: "Pixelify Sans", sans-serif;
     color:  rgb(197, 188, 198);
-    transition-duration: 0.3s;
     cursor: pointer;
     box-shadow: 0 0 5px rgb(197, 188, 198), 0 0 10px rgb(197, 188, 198), 0 0 15px rgb(42, 24, 39);
+    transition: 0.5s ease-in-out;
 }
 
 .button:hover{
     color: rgb(42, 24, 39);
     background-color:  rgb(197, 188, 198);
-    box-shadow: 0 0 5px rgb(197, 188, 198), 0 0 10px rgb(197, 188, 198), 0 0 15px rgb(42, 24, 39);
-
 }
 
-/*social media buttons
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(12, 2, 11);
-    border-radius: 10px;
-    width: 550px;
-    height: fit-content;
-    padding-left: 0px;
-    opacity: 90%;
-    padding-left: 0px;
-}
+/*social media buttons*/
 
 .socialmedia-cnt{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
     align-items: center;
     justify-content: center;
     column-gap: 15px;
     padding-left: 0px;
-    background-color: rgb(12, 2, 11);
     border-radius: 10px;
     width: 550px;
     height: fit-content;
-    padding-left: 0px;
-    opacity: 90%;
-    padding-left: 0px;
 }
 .socialmedia{
     transition: 0.3s ease-in-out;
@@ -171,11 +150,10 @@ body h1{
     padding-bottom: 20px;
 }
 .socialmedia img{
-    width: 110px;
+    width: 90px;
     height: auto;
     padding: 0px;
 }
 .socialmedia:hover{
-    filter: brightness(150%);
+    filter: brightness(140%);
 }
-*/

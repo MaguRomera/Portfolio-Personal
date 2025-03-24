@@ -181,7 +181,6 @@ body h1{
     margin: 0;
     padding: 0;
 }
-
 .exp{
     margin: 15px;
     padding: 20px;
@@ -197,7 +196,6 @@ body h1{
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
-
 .exp:hover{
     transform: scale(1.2);
     box-shadow: 0 0 5px rgb(197, 188, 198), 0 0 10px rgb(197, 188, 198), 0 0 15px rgb(42, 24, 39);
