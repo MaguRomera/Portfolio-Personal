@@ -140,6 +140,7 @@ header{
     padding: 5px;
     margin: 10px;
     transition-duration: 0.3s;
+    cursor: default ;
 }
 .sskill:hover{
     background-color: beige;

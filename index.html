@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Aurora Magestina's portfolio</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="styles/home_styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <audio id="background-music" loop>
-        <source src="sounds/Adele - Skyfall (8-Bit Cover).mp3">
-    </audio>
-    <div>
-        <img src="img/starting wallpaper v2.gif" type="gif" class="fondo"></img>
-    </div>
-
-    <div class="main">
-        <section class="top">
-            <header>
-                <h1 class="principaltxt">Aurora Magestina</h1>
-                <h2 class="principaltxt">systems engineering student</h2>
-            </header>
-            <div class="config">
-                <button id="music-toggle">
-                    <img id="music-icon" src="img/no music volume button.png"></img>
-                </button>
-            </div>
-        </section>
-        
-        <audio id="select-sound">
-            <source src="sounds/button_press.mp3">
+    <head>
+        <title>Aurora Magestina's portfolio</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="styles/home_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <audio id="background-music" loop>
+            <source src="sounds/Adele - Skyfall (8-Bit Cover).mp3">
         </audio>
-        
-        <nav class="menu">
-            <a class="options" href="aboutme.html">About me</a>
-            <a class="options" href="skills.html">My skills</a>
-            <a class="options" href="projects.html">Projects</a>
-            <a class="options" href="contact.html">Contact me</a>
-        </nav>
-    </div>
+        <div>
+            <img src="img/starting wallpaper v2.gif" type="gif" class="fondo"></img>
+        </div>
 
-    
-    <script>
-        //Botón de música 
-        document.getElementById("music-toggle").addEventListener("click", function () {
+        <div class="main">
+            <section class="top">
+                <header>
+                    <h1 class="principaltxt">Aurora Magestina</h1>
+                    <h2 class="principaltxt">systems engineering student</h2>
+                </header>
+                <div class="config">
+                    <button id="music-toggle">
+                        <img id="music-icon" src="img/no music volume button.png"></img>
+                    </button>
+                </div>
+            </section>
+            
+            <audio id="select-sound">
+                <source src="sounds/button_press.mp3">
+            </audio>
+            
+            <nav class="menu">
+                <a class="options" href="aboutme.html">About me</a>
+                <a class="options" href="skills.html">My skills</a>
+                <a class="options" href="projects.html">Projects</a>
+                <a class="options" href="contact.html">Contact me</a>
+            </nav>
+        </div>
+    </body>
+</html>
+
+<script>
+    //Botón de música 
+    document.getElementById("music-toggle").addEventListener("click", function () {
         var audio = document.getElementById("background-music");
         var icon = document.getElementById("music-icon");
-    
+
         if (audio.paused) {
             audio.play();
             icon.src = "img/music volume button.png"; 
@@ -56,32 +57,27 @@
             icon.src = "img/no music volume button.png"; 
         }
     });
-        document.addEventListener("DOMContentLoaded", function () {
+    
+    document.addEventListener("DOMContentLoaded", function () {
         var music = document.getElementById("background-music");
         music.volume = 0.2;
     });
 
     //Para el audio de los botones
     document.addEventListener("DOMContentLoaded", function () {
-        var audioClick = document.getElementById("select-sound");
-        var menuOptions = document.querySelectorAll(".options");
+            var audioClick = document.getElementById("select-sound");
+            var menuOptions = document.querySelectorAll(".options");
 
-        menuOptions.forEach(function(option) {
-            option.addEventListener("click", function (event) {
-                event.preventDefault(); 
-                audioClick.currentTime = 0;
-                audioClick.play().catch(error => console.log(error));
-                setTimeout(() => {
-                    window.location.href = option.href;
-                }, 300); 
+            menuOptions.forEach(function(option) {
+                option.addEventListener("click", function (event) {
+                    event.preventDefault(); 
+                    audioClick.currentTime = 0;
+                    audioClick.play().catch(error => console.log(error));
+                    setTimeout(() => {
+                        window.location.href = option.href;
+                    }, 300); 
+                });
             });
-        });
-        audioClick.volume = 0.4;
+            audioClick.volume = 0.4;
     });
-    </script>
-
-</body>
-
-
-
-</html>
+</script>

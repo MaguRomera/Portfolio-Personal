@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     </head>
+
     <body>
 
         <header>
@@ -32,9 +33,11 @@
                     <h1>Hi! This is me,</h1>
                     <h1 class="neon-text"> Aurora.</h1>
                 </span>
-                <p>I love designing and developing efficient solutions, whether in code, diagrams, or innovative products. I enjoy challenges and creative projects.</p>
+                <p>I love designing and developing efficient solutions, whether in code, diagrams, or innovative
+                    products. I enjoy challenges and creative projects.</p>
                 <p>My approach blends logic, creativity, and a touch of retro-futuristic style.</p>
-                <p>I'm constantly exploring new ideas and refining my skills. Shall we collaborate on something awesome?</p>
+                <p>I'm constantly exploring new ideas and refining my skills. Shall we collaborate on something awesome?
+                </p>
             </span>
             <img src="img/yo normal.png" class="me">
         </section>
@@ -71,7 +74,8 @@
             <div class="fit-in-columns">
                 <span class="card">
                     <h3>I do a lot of things.</h3>
-                    <p>If there's a tutorial on YouTube, I can probably do it. Thanks to tutorials, I have multiple hobbies.</p>
+                    <p>If there's a tutorial on YouTube, I can probably do it. Thanks to tutorials, I have multiple
+                        hobbies.</p>
                 </span>
                 <span class="card">
                     <h3>I love playing videogames.</h3>
@@ -79,29 +83,27 @@
                     <p>Give me a good simulation or management game, and I'll disappear for HOURS.</p>
                 </span>
             </div>
-  
+
         </section>
-        
-        <script>
-            //Para el audio de los botones
-                document.addEventListener("DOMContentLoaded", function () {
-            var audioClick = document.getElementById("select-sound");
-            var menuOptions = document.querySelectorAll(".options");
-
-            menuOptions.forEach(function(option) {
-                option.addEventListener("click", function (event) {
-                    event.preventDefault(); 
-                    audioClick.currentTime = 0;
-                    audioClick.play().catch(error => console.log(error));
-                    setTimeout(() => {
-                        window.location.href = option.href;
-                    }, 300); 
-                });
-            });
-            audioClick.volume = 0.4;
-        });    
-        </script>
-
     </body>
 </html>
 
+<script>
+    //Para el audio de los botones
+    document.addEventListener("DOMContentLoaded", function () {
+        var audioClick = document.getElementById("select-sound");
+        var menuOptions = document.querySelectorAll(".options");
+
+        menuOptions.forEach(function(option) {
+            option.addEventListener("click", function (event) {
+                event.preventDefault(); 
+                audioClick.currentTime = 0;
+                audioClick.play().catch(error => console.log(error));
+                setTimeout(() => {
+                    window.location.href = option.href;
+                }, 300); 
+            });
+        });
+        audioClick.volume = 0.4;
+    });    
+</script>
