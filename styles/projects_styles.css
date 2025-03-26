@@ -106,7 +106,6 @@ header{
 
 .project:hover{
     transform: scale(1.2);
-    box-shadow: 0 0 5px rgb(197, 188, 198), 0 0 10px rgb(197, 188, 198), 0 0 15px rgb(42, 24, 39);
 }
 
 /*animación neón*/
@@ -189,7 +188,7 @@ body h1{
     flex-wrap: wrap;
     background-color: rgb(12, 2, 11);
     opacity: 90%;
-    height: 320px;
+    height: fit-content;
     width: 200px;
     align-items: center;
     justify-content: center;
@@ -198,5 +197,25 @@ body h1{
 }
 .exp:hover{
     transform: scale(1.2);
-    box-shadow: 0 0 5px rgb(197, 188, 198), 0 0 10px rgb(197, 188, 198), 0 0 15px rgb(42, 24, 39);
+}
+
+/*read more btns*/
+
+.hidden-cnt{
+    display: none;
+}
+.read-more{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: beige;
+    background-color: rgb(42, 24, 39);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0px;
+    
+}
+.read-more:hover {
+    background-color: rgb(89, 59, 93);
 }

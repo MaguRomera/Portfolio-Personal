@@ -52,21 +52,24 @@
         <h1>
             EXPERIENCE
         </h1>
-        <ul class="experience">
+        <ul class="experience" id="exp-list">
             <li class="exp">
                 <h2>Intern at Tecnoteca</h2>
                 <h3>Sept. 2022 - Dec. 2022</h3>
-                <p>CRUD system for the Municipality of San Francisco.  I was responsible for the UI/UX design and the frontend development</p>
-            </li>
-            <li class="exp"> 
-                <h2>Green map project</h2>
-                <h3>Feb. 2025 - Present</h3>
-                <p>A municipal mobile application for urban tree management. I work  as a functional analyst and QA tester on the project.</p>
+                <p class="hidden-cnt">CRUD system for the Municipality of San Francisco.  I was responsible for the UI/UX design and the frontend development</p>
+                <button class="read-more">Read more</button>
             </li>
             <li class="exp">
                 <h2>Intern at Promedon</h2>
                 <h3>Mar. 2023 - Jun. 2023</h3>
-                <p>Junior BI Analyst. I worked on a CRUD system and used automation tools to predict and gather insights on potential clients.</p>
+                <p class="hidden-cnt">Junior BI Analyst. I worked on a CRUD system and used automation tools to predict and gather insights on potential clients.</p>
+                <button class="read-more">Read more</button>
+            </li>
+            <li class="exp"> 
+                <h2>Green map project</h2>
+                <h3>Feb. 2025 - Present</h3>
+                <p class="hidden-cnt">A municipal mobile application for urban tree management. I work  as a functional analyst and QA tester on the project.</p>
+                <button class="read-more">Read more</button>
             </li>
         </ul>
 
@@ -75,20 +78,36 @@
 
 <script>
     //Para el audio de los botones
-        document.addEventListener("DOMContentLoaded", function () {
-    var audioClick = document.getElementById("select-sound");
-    var menuOptions = document.querySelectorAll(".options");
+    document.addEventListener("DOMContentLoaded", function () {
+        var audioClick = document.getElementById("select-sound");
+        var menuOptions = document.querySelectorAll(".options");
 
-    menuOptions.forEach(function(option) {
-        option.addEventListener("click", function (event) {
-            event.preventDefault(); 
-            audioClick.currentTime = 0;
-            audioClick.play().catch(error => console.log(error));
-            setTimeout(() => {
-                window.location.href = option.href;
-            }, 300); 
+        menuOptions.forEach(function(option) {
+            option.addEventListener("click", function (event) {
+                event.preventDefault(); 
+                audioClick.currentTime = 0;
+                audioClick.play().catch(error => console.log(error));
+                setTimeout(() => {
+                    window.location.href = option.href;
+                }, 300); 
+            });
         });
+        audioClick.volume = 0.4;
     });
-    audioClick.volume = 0.4;
-});    
+
+    //Para los botoncitos de ver más
+    document.addEventListener("DOMContentLoaded", function () {
+    var buttons = document.querySelectorAll(".read-more");
+
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                var details = this.previousElementSibling;
+
+                details.classList.toggle("hidden-cnt");
+
+                // Cambia el texto del botón
+                this.textContent = details.classList.contains("hidden-cnt") ? "Read more" : "Read less";
+            });
+        });
+    });    
 </script>
